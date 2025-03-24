@@ -1,0 +1,7 @@
+foamListTimes -rm
+rm -r processor*
+rm -r postProcessing
+rm *.foam
+
+// ************************* tensorXF - 2025 ******************************* //
+// ************************** pttensor.com ********************************* //
