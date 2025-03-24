@@ -14,6 +14,7 @@ How to Run:
 #3. Run the simulation: execute './Run'
 #4. Clean the results: execute './cleanResults'
 
+Use this web-based mesh generator designed for this template: https://tensorcalculators.com/external-flow-blockmesh-and-snappyhexmesh-calculator/ 
 
 Documentation:
 1st release: October 24th, 2024 = basic external flow and snappyHexMesh
