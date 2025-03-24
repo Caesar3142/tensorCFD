@@ -1,30 +1,25 @@
-/*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2406                                 |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
-|    \\/     M anipulation  |                                                 |
-\*---------------------------------------------------------------------------*/
-
+/*--------------------------------*- C++ -*----------------------------------*| =========                 |                                                 |
+| \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \    /   O peration     | Version:  v2406                                 |
+|   \  /    A nd           | Website:  www.openfoam.com                      |
+|    \/     M anipulation  |                                                 |
+*---------------------------------------------------------------------------*/
 FoamFile
 {
     format      ascii;
     class       dictionary;
     object      snappyHexMeshDict;
 }
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-
 
 castellatedMesh true;
 snap            true;
 addLayers      false;
 
-
 geometry
 {
-    object.obj { type triSurfaceMesh; name object;}
+    object.stl { type triSurfaceMesh; name object;}
 
-    refinementBox { type box; min (-0.5 0 -1.5); max (9 3 1.5); }
+    refinementBox { type box; min (-0.39 -0.1 -1.05); max (7.4 2.13 1.05); }
 }
 
 
@@ -54,7 +49,7 @@ castellatedMeshControls
     }
 
 
-    locationInMesh (14.5 4.5 2.5);
+    locationInMesh (33.3333 12.2958 11.2959);
     allowFreeStandingZoneFaces false;
 }
 
@@ -121,5 +116,6 @@ mergeTolerance 1E-6;
 
 
 // ************************************************************************* //
-// **************************** tensorXF 2025 ****************************** //
-// **************************** pttensor.com ******************************* //
+// **************************** tensorXFV 2025 ***************************** //
+// **************************** tensorCFD.com ******************************* //
+   
