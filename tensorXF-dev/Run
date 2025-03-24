@@ -1,0 +1,6 @@
+decomposePar
+mpirun -np 8 simpleFoam -parallel
+reconstructPar
+
+// ************************ tensorXF - 2025 ******************************* //
+// ************************** pttensor.com ******************************** //
