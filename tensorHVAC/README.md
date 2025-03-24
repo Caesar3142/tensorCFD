@@ -1,8 +1,8 @@
-TensorVLV, part of the TensorCFD project by pttensor.com, accelerates OpenFOAM deployment in industrial applications. It provides templates for valve simulation, calculating pressure drop and cavitation. 
+TensorHVAC, part of the TensorCFD project by pttensor.com, accelerates OpenFOAM deployment in industrial applications. It provides templates for HVAC simulation, calculating temperature, velocity, pressure, and comfort parameters. 
 
-With this development version, Users can copy, replace geometry or boundary conditions, and simulate internal flow, incompressible, steady, phase change for vapor (cavitation), with RAS turbulent models.
+With this development version, Users can copy, replace geometry or boundary conditions, and simulate internal flow, heat transfer, incompressible, steady, with RAS turbulent models.
 
-Acknowledge “tensorVLV” if using this template folder.
+Acknowledge “tensorHVAC” if using this template folder.
 
 Note: This development version may have non-optimized setups for accuracy, validity, or computational efficiency. Results depend on the case and setup. pttensor.com disclaims responsibility for results.
 
@@ -16,6 +16,4 @@ How to Run:
 Or simply execute './Allrun' to execute the 'buildMesh', and 'Run' commands.
 
 Documentation:
-v1: October 5th, 2024 = basic internal flow with snappyHexMesh (first release)
-v2: February 19th, 2025 = Adding cavitation capability
-
+v1: March 24th, 2025 = Heat transfer, comfort parameters, snappyHexMesh (first release)
