@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      turbulenceProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+simulationType RAS;
+
+RAS
+{
+    RASModel            kOmegaSST; //kOmega; //kEpsilon; //SpalartAllmaras;
+
+    turbulence          on;
+
+    printCoeffs         on;
+}
+
+// ************************************************************************* //
+// **************************** tensorXF 2025 ****************************** //
+// **************************** pttensor.com ******************************* //
