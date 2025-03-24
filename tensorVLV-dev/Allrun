@@ -1,8 +1,0 @@
-//generate mesh
-blockMesh
-snappyHexMesh -overwrite
-
-//running
-decomposePar
-mpirun -np 8 cavitatingFoam -parallel
-reconstructPar

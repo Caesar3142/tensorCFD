@@ -1,6 +1,0 @@
-decomposePar
-mpirun -np 8 cavitatingFoam -parallel
-reconstructPar
-
-// ************************ tensorVLV - 2025 ******************************* //
-// ************************** pttensor.com ********************************* //
