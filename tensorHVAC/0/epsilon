@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 2 -3 0 0 0 0];
 
-internalField   uniform 0.01;
+internalField   uniform 0.000082;
 
 boundaryField
 {
@@ -27,7 +27,7 @@ boundaryField
         Cmu             0.09;
         kappa           0.41;
         E               9.8;
-        value           uniform 0.01;
+        value           $internalField;
     }
 
     ceiling
@@ -36,13 +36,13 @@ boundaryField
         Cmu             0.09;
         kappa           0.41;
         E               9.8;
-        value           uniform 0.01;
+        value           $internalField;
     }
 
     inlet
     {
         type            fixedValue;
-        value           uniform 0.01;
+        value           $internalField;
     }
 
     outlet
@@ -56,7 +56,7 @@ boundaryField
         Cmu             0.09;
         kappa           0.41;
         E               9.8;
-        value           uniform 0.01;
+        value           $internalField;
     }
         
     human
@@ -65,7 +65,7 @@ boundaryField
         Cmu             0.09;
         kappa           0.41;
         E               9.8;
-        value           uniform 0.01;
+        value           $internalField;
     }
 }
 

@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform 0.1;
+internalField   uniform 0.001350;
 
 boundaryField
 {
@@ -24,19 +24,19 @@ boundaryField
     floor
     {
         type            kqRWallFunction;
-        value           uniform 0.1;
+        value           $internalField;
     }
 
     ceiling
     {
         type            kqRWallFunction;
-        value           uniform 0.1;
+        value           $internalField;
     }
 
     inlet
     {
         type            fixedValue;
-        value           uniform 0.1;
+        value           $internalField;
     }
 
     outlet
@@ -47,13 +47,13 @@ boundaryField
     walls
     {
         type            kqRWallFunction;
-        value           uniform 0.1;
+        value           $internalField;
     }
 
     human
     {
         type            kqRWallFunction;
-        value           uniform 0.1;
+        value           $internalField;
     }
 }
 
