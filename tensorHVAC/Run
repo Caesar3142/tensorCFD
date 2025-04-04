@@ -1,0 +1,6 @@
+decomposePar
+mpirun -np 8 buoyantSimpleFoam -parallel
+reconstructPar
+
+// ************************ tensorHVAC - 2025 ******************************* //
+// ************************** pttensor.com ********************************* //
